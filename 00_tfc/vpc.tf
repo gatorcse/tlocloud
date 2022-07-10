@@ -3,7 +3,7 @@ resource "tfe_workspace" "vpc" {
   organization = var.tfc_organization_name
   tag_names    = ["tlo_cloud"]
   vcs_repo {
-    identifier     = "${var.github_username}/tlo-cloud"
+    identifier     = "${var.github_username}/tlocloud"
     oauth_token_id = var.oauth_token_id
   }
   working_directory   = "01-vpc"
